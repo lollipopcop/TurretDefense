@@ -5,9 +5,24 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_turret</sprite>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_bullet</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_turret</object>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_bullet</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_test_level</room>
+  </rooms>
+  <constants number="1">
+    <constant name="CELL_WIDTH">32</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
