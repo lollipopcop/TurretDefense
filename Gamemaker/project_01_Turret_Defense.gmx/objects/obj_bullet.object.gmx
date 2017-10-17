@@ -51,6 +51,7 @@ damage = 25;
             <kind>1</kind>
             <string>/// Deal Damage
 obj_enemy.my_health -= damage;
+instance_destroy();
 </string>
           </argument>
         </arguments>

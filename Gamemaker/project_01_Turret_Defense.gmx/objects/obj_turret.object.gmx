@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>/// Create Code
 range = CELL_WIDTH*6;
+firing_timer = -1;
+rate_of_fire = 60;
 </string>
           </argument>
         </arguments>
@@ -53,13 +55,17 @@ range = CELL_WIDTH*6;
 
 enemy = instance_nearest(x, y, obj_enemy);
 
-//if enemy is in range
-if(distance_to_object(enemy)&lt; range){
+//if enemy is in range shoot at it
+if((distance_to_object(enemy)&lt; range) &amp;&amp; (firing_timer == -1)){
     bullet = instance_create(x, y, obj_bullet);
     bullet.speed = 15;
     bullet.direction = point_direction(x, y, enemy.x, enemy.y);
+    firing_timer = rate_of_fire;
 }
-    //fire at enemy
+
+if(firing_timer != -1){
+    firing_timer -= 1;
+}
 </string>
           </argument>
         </arguments>
