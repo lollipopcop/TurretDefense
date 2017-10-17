@@ -9,13 +9,17 @@
     <sprite>sprites\spr_turret</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_wall</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_wall</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_turret</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_bullet</object>
+    <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test_level</room>
