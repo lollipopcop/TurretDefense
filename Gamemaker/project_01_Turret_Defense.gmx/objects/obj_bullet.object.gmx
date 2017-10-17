@@ -50,7 +50,8 @@ damage = 25;
           <argument>
             <kind>1</kind>
             <string>/// Deal Damage
-obj_enemy.my_health -= damage;
+
+other.my_health -= damage;
 instance_destroy();
 </string>
           </argument>
