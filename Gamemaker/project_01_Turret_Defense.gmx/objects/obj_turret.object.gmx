@@ -83,6 +83,10 @@ enemy = instance_nearest(x, y, obj_enemy);
 if ((distance_to_object(enemy) &lt; range) &amp;&amp; (alarm[0] == -1)) {
     alarm[0] = irandom_range(27, 33);
 }
+
+if (!instance_exists(enemy)) {
+    alarm[0] = -1;
+}
 </string>
           </argument>
         </arguments>
