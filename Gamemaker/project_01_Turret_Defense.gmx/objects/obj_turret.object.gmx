@@ -50,9 +50,13 @@ range = CELL_WIDTH*3; // Distance turret can fire
           <argument>
             <kind>1</kind>
             <string>/// Creates / Fires Projectile when created
-bullet = instance_create(x, y, obj_bullet);
-bullet.speed = 7;
-bullet.direction = point_direction(x, y, enemy.x, enemy.y);
+
+// Check enemy (still) exists, if so, create projectile
+if(instance_exists(enemy)) {
+    bullet = instance_create(x, y, obj_bullet);
+    bullet.speed = 7;
+    bullet.direction = point_direction(x, y, enemy.x, enemy.y);
+}
 </string>
           </argument>
         </arguments>
@@ -82,10 +86,6 @@ enemy = instance_nearest(x, y, obj_enemy);
 // if enemy is in range shoot at it
 if ((distance_to_object(enemy) &lt; range) &amp;&amp; (alarm[0] == -1)) {
     alarm[0] = irandom_range(27, 33);
-}
-
-if (!instance_exists(enemy)) {
-    alarm[0] = -1;
 }
 </string>
           </argument>
