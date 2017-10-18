@@ -20,6 +20,7 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_mouse_create</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test_level</room>
