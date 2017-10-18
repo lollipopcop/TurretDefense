@@ -25,11 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !collision_rectangle(    mouse_x - (CELL_WIDTH/2), 
+            <string>/// instantiate a new turret
+
+//check to see if the turret will collide with wall objects before placing
+if !collision_rectangle(    mouse_x - (CELL_WIDTH/2), 
                         mouse_y - (CELL_WIDTH/2),
                         mouse_x + (CELL_WIDTH/2), 
                         mouse_y + (CELL_WIDTH/2), 
-                        obj_wall, 
+                        obj_collision, 
                         false, 
                         true ){
     instance_create(mouse_x, mouse_y, obj_turret);
