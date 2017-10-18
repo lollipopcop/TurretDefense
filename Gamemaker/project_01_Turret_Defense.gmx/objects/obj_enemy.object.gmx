@@ -25,12 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//define an enemies health for each instance
+            <string>/// Initialize Enemy variables
+
+// Define an enemies health / speed for each instance
 my_health = 100;
 my_speed = 1 + random(1);
 
-
+// Choose an initial movement direction
 direction=round(random(360));
+
+// Randomly change direction / speed within 50 -&gt; 200 frames
 alarm[0]=50+random(150);
 </string>
           </argument>
@@ -54,7 +58,9 @@ alarm[0]=50+random(150);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction=round(random(360));
+            <string>/// Upon being triggered, change direction / speed
+
+direction=round(random(360));
 my_speed = 1 + random(1);
 alarm[0]=50+random(150);
 </string>
@@ -79,9 +85,12 @@ alarm[0]=50+random(150);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(direction, my_speed);
+            <string>/// Set and check enemies movement and health
 
-//check to see if the enemy has died
+// Move enemy set direction and speed
+motion_set(direction, my_speed);
+
+// Check to see if the enemy has died
 if(my_health &lt;= 0){
     instance_destroy();
 }
@@ -107,7 +116,9 @@ if(my_health &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>my_speed = 0;
+            <string>/// Stop, then reassign direction / speed
+
+my_speed = 0;
 alarm[0] = 5;
 </string>
           </argument>
@@ -131,7 +142,7 @@ alarm[0] = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// stop and move away
+            <string>/// Stop, then reassign direction / speed
 my_speed = 0;
 alarm[0] = 5;
 </string>

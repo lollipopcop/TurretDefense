@@ -25,10 +25,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Create Code
-range = CELL_WIDTH*3;
-firing_timer = -1;
-rate_of_fire = irandom_range(27,33);
+            <string>/// Initialize Turret Variables
+range = CELL_WIDTH*3; // Distance turret can fire
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Creates / Fires Projectile when created
+bullet = instance_create(x, y, obj_bullet);
+bullet.speed = 7;
+bullet.direction = point_direction(x, y, enemy.x, enemy.y);
 </string>
           </argument>
         </arguments>
@@ -51,20 +75,13 @@ rate_of_fire = irandom_range(27,33);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Aim at closest enemy and shoot projectile
+            <string>/// Aim at closest Enemy (in range) and shoot projectile
 
 enemy = instance_nearest(x, y, obj_enemy);
 
-//if enemy is in range shoot at it
-if((distance_to_object(enemy)&lt; range) &amp;&amp; (firing_timer == -1)){
-    bullet = instance_create(x, y, obj_bullet);
-    bullet.speed = 7;
-    bullet.direction = point_direction(x, y, enemy.x, enemy.y);
-    firing_timer = rate_of_fire;
-}
-
-if(firing_timer != -1){
-    firing_timer -= 1;
+// if enemy is in range shoot at it
+if ((distance_to_object(enemy) &lt; range) &amp;&amp; (alarm[0] == -1)) {
+    alarm[0] = irandom_range(27, 33);
 }
 </string>
           </argument>
