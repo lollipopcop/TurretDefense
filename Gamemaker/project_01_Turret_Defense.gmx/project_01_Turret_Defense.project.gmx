@@ -20,11 +20,11 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_wall</object>
-    <object>objects\obj_mouse_create</object>
+    <object>objects\obj_mouseCreate</object>
     <object>objects\obj_collision</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test_level</room>
+    <room>rooms\rm_testLevel</room>
   </rooms>
   <constants number="1">
     <constant name="CELL_WIDTH">32</constant>
