@@ -25,15 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !collision_rectangle(    mouse_x - (CELL_WIDTH/2),  
+            <string>/// Create Turret with mouse click
+
+// If there is no collision, and you have the funds,
+// create a turret in location clicked.
+if !collision_rectangle(    mouse_x - (CELL_WIDTH/2),  
                             mouse_y - (CELL_WIDTH/2), 
                             mouse_x + (CELL_WIDTH/2),  
                             mouse_y + (CELL_WIDTH/2),  
                             obj_collision,  
                             false,  
-                            true ){ 
+                            true ) &amp;&amp; (global.money &gt; 0){ 
    instance_create(mouse_x, mouse_y, obj_turret);  
 } 
+
+// When turret is placed, reduce money by turret cost
+global.money -= 1;
 </string>
           </argument>
         </arguments>
