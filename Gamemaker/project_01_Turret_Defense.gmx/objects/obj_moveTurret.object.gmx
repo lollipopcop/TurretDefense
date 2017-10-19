@@ -28,6 +28,8 @@
             <string>/// select correct sprite frame
 image_speed = 0;
 image_index = 1;
+
+turret_type = noone;
 </string>
           </argument>
         </arguments>

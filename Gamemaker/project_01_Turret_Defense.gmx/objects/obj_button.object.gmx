@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>global.selected = false;
 global.selected_turret = obj_moveTurret;
+my_turret = noone;
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,8 @@ global.selected_turret = obj_moveTurret;
             <kind>1</kind>
             <string>global.selected = true;
 
-instance_create(mouse_x, mouse_y, global.selected_turret);
+new_turret = instance_create(mouse_x, mouse_y, global.selected_turret);
+new_turret.turret_type = my_turret;
 </string>
           </argument>
         </arguments>
