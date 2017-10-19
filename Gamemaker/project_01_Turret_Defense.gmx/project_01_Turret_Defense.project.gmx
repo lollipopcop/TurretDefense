@@ -13,6 +13,7 @@
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_homingTurret</sprite>
     <sprite>sprites\spr_homingBullet</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wall</background>
@@ -30,6 +31,7 @@
     <object>objects\obj_moveTurret</object>
     <object>objects\obj_homingTurret</object>
     <object>objects\obj_homingBullet</object>
+    <object>objects\obj_explosion</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_testLevel</room>
