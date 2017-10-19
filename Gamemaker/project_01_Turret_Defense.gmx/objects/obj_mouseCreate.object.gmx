@@ -32,13 +32,12 @@
                                 mouse_y + (CELL_WIDTH/2),  
                                 obj_collision,  
                                 false,  
-                                true ){ 
-            instance_create(mouse_x, mouse_y, obj_turret); 
+                                true ) &amp;&amp; (global.selected == true){ 
+        instance_create(mouse_x, mouse_y, obj_turret); 
+        global.selected = false;
+        global.money -= 1;
     }
 }
-
-// Subtract turret cost from money 
-global.money -= 1; 
 </string>
           </argument>
         </arguments>
