@@ -11,6 +11,8 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_homingTurret</sprite>
+    <sprite>sprites\spr_homingBullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wall</background>
@@ -26,6 +28,8 @@
     <object>objects\obj_mouseCreate</object>
     <object>objects\obj_button</object>
     <object>objects\obj_moveTurret</object>
+    <object>objects\obj_homingTurret</object>
+    <object>objects\obj_homingBullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_testLevel</room>
