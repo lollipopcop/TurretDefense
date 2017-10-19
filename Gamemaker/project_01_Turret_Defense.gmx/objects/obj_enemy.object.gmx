@@ -93,6 +93,7 @@ motion_set(direction, my_speed);
 // Check to see if the enemy has died
 if(my_health &lt;= 0){
     instance_destroy();
+    global.money += 1;
 }
 </string>
           </argument>
