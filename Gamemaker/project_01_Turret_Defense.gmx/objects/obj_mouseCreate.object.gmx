@@ -25,24 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// instantiate a new turret
-
-
-//check to see if the turret will collide with wall objects before placing
-if(global.money &gt; 0) {
-    if !collision_rectangle(mouse_x - (CELL_WIDTH/2), 
-                            mouse_y - (CELL_WIDTH/2),
-                            mouse_x + (CELL_WIDTH/2), 
-                            mouse_y + (CELL_WIDTH/2), 
-                            obj_collision, 
-                            false, 
-                            true ){
-        instance_create(mouse_x, mouse_y, obj_turret);
-    }
-}
-
-// Subtract turret cost from money
-global.money -= 1;
+            <string>if !collision_rectangle(    mouse_x - (CELL_WIDTH/2),  
+                            mouse_y - (CELL_WIDTH/2), 
+                            mouse_x + (CELL_WIDTH/2),  
+                            mouse_y + (CELL_WIDTH/2),  
+                            obj_collision,  
+                            false,  
+                            true ){ 
+   instance_create(mouse_x, mouse_y, obj_turret);  
+} 
 </string>
           </argument>
         </arguments>
