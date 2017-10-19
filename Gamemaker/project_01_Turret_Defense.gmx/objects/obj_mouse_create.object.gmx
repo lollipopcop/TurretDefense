@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>/// instantiate a new turret
 
+//I bet you won't find this comment.
+
 //check to see if the turret will collide with wall objects before placing
 if !collision_rectangle(    mouse_x - (CELL_WIDTH/2), 
                         mouse_y - (CELL_WIDTH/2),
