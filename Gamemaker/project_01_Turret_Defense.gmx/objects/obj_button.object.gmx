@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.selected = false;
+global.selected_turret = obj_moveTurret;
 </string>
           </argument>
         </arguments>
@@ -49,6 +50,8 @@
           <argument>
             <kind>1</kind>
             <string>global.selected = true;
+
+instance_create(mouse_x, mouse_y, global.selected_turret);
 </string>
           </argument>
         </arguments>

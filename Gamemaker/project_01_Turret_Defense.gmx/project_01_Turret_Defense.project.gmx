@@ -25,6 +25,7 @@
     <object>objects\obj_engine</object>
     <object>objects\obj_mouseCreate</object>
     <object>objects\obj_button</object>
+    <object>objects\obj_moveTurret</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_testLevel</room>
