@@ -27,10 +27,15 @@
             <kind>1</kind>
             <string>/// Initialize Turret Variables
 range = CELL_WIDTH*3; // Distance turret can fire
+rateOfFire = 30;
 
 //choose correct sprite image
 image_speed = 0;
 image_index = 0;
+
+/*this is set to true when it is placed in the world using a button
+once set to true it will enable the step event to function normally*/
+created = false;
 </string>
           </argument>
         </arguments>
@@ -85,12 +90,14 @@ if(instance_exists(enemy) &amp;&amp; (distance_to_object(enemy) &lt; range)) {
             <kind>1</kind>
             <string>/// Aim at closest Enemy (in range) and shoot projectile
 
-enemy = instance_nearest(x, y, obj_enemy);
-
-// if enemy is in range shoot at it
-if ((distance_to_object(enemy) &lt; range) &amp;&amp; (alarm[0] == -1)) {
-    //This sets the firing rate eto be slightly random
-    alarm[0] = irandom_range(27, 33);
+if(created){
+    enemy = instance_nearest(x, y, obj_enemy);
+    
+    // if enemy is in range shoot at it
+    if ((distance_to_object(enemy) &lt; range) &amp;&amp; (alarm[0] == -1)) {
+        //This sets the firing rate eto be slightly random
+        alarm[0] = irandom_range(rateOfFire-3, rateOfFire+3);
+    }
 }
 </string>
           </argument>

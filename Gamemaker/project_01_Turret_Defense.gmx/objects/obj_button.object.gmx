@@ -25,15 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.selected = false;
-global.selected_turret = obj_moveTurret;
-my_turret = noone;
+            <string>/// set up variables
+
+leftPressed = 0;
+
+//if an actual button was pressed
+buttonPressed = false;
+
+//the instance of turret created
+turret = 0;
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -50,10 +57,106 @@ my_turret = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.selected = true;
+            <string>/// turret follows mouse until spawned
+if ( leftPressed == 1 &amp;&amp; buttonPressed == true ){
+    turret.x = mouse_x;
+    turret.y = mouse_y;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="53">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///spawn the turret based on the button
 
-new_turret = instance_create(mouse_x, mouse_y, global.selected_turret);
-new_turret.turret_type = my_turret;
+//indicates how many times the left mouse button has been pressed
+leftPressed++;
+
+//local variable to check if the created turret is going to collide with anything
+var isCollision = false;
+
+//create the turret to be placed in the world
+if ( (position_meeting( mouse_x, mouse_y, id)) &amp;&amp; (buttonPressed == false) ){
+    turret = instance_create(mouse_x, mouse_y, my_turret);
+    leftPressed = 1;
+    buttonPressed = true;
+} 
+
+//spawn the turret in the world properly if it doesn't collide with things
+if ( leftPressed == 2 &amp;&amp; instance_exists(turret)) {
+
+//evaluate to see if there is any collision between the turret and any object with the parent obj_collision
+    with turret{
+        if(place_meeting(x, y, obj_collision)){
+            isCollision = true;
+        }
+    }
+    
+    //if there isn't any collision reset all variables effectively spawning the turret at that location                        
+    if(!isCollision)
+    {
+        turret.created = true;
+        turret = noone;
+        leftPressed = 0;
+        buttonPressed = false;
+        isCollision = false;
+    }
+    //if there is collision reset number of left mouse presses to 1
+    else {
+        leftPressed = 1;
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///set up button text
+
+draw_self();
+
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_color(c_black);
+draw_set_font(fnt_button);
+
+//this checks the text variable which is made in the object creation code
+draw_text(x, y, text);
 </string>
           </argument>
         </arguments>
