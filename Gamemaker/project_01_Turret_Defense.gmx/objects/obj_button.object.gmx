@@ -95,6 +95,7 @@ var isCollision = false;
 //create the turret to be placed in the world
 if ( (position_meeting( mouse_x, mouse_y, id)) &amp;&amp; (buttonPressed == false) ){
     turret = instance_create(mouse_x, mouse_y, my_turret);
+    turret.image_index = 1;
     leftPressed = 1;
     buttonPressed = true;
 } 
@@ -112,6 +113,8 @@ if ( leftPressed == 2 &amp;&amp; instance_exists(turret)) {
     //if there isn't any collision reset all variables effectively spawning the turret at that location                        
     if(!isCollision)
     {
+        global.money -= turret.cost;
+        turret.image_index = 0;
         turret.created = true;
         turret = noone;
         leftPressed = 0;

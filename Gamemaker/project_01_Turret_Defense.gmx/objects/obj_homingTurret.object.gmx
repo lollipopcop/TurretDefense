@@ -30,6 +30,10 @@
 my_range = CELL_WIDTH*4;
 rateOfFire = 50;
 
+image_speed = 0;
+
+cost = 4;
+
 /*this is set to true when it is placed in the world using a button
 once set to true it will enable the step event to function normally*/
 created = false;

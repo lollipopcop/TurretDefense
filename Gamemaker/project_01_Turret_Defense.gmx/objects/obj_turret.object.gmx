@@ -29,6 +29,8 @@
 range = CELL_WIDTH*3; // Distance turret can fire
 rateOfFire = 30;
 
+cost = 2;
+
 //choose correct sprite image
 image_speed = 0;
 image_index = 0;
