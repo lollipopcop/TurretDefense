@@ -133,17 +133,18 @@ if(cost &lt;= global.money){
     
     //evaluate to see if there is any collision between the turret and any object with the parent obj_collision
         with turret{
-            if(place_meeting(x, y, obj_collision)){
+            if(place_meeting(x, y, obj_turretHole)){
                 isCollision = true;
             }
         }
         
         //if there isn't any collision reset all variables effectively spawning the turret at that location                        
-        if(!isCollision)
+        if(isCollision)
         {
             global.money -= cost;
             turret.image_index = 0;
             turret.created = true;
+            turret.depth = -1000;
             turret = noone;
             leftPressed = 0;
             buttonPressed = false;
