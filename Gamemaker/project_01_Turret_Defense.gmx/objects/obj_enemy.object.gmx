@@ -31,11 +31,16 @@
 my_health = 100;
 my_speed = 1 + random(1);
 
+/*
 // Choose an initial movement direction
 direction=round(random(360));
 
+
 // Randomly change direction / speed within 50 -&gt; 200 frames
 alarm[0]=50+random(150);
+*/
+
+path_start(path_test, my_speed, path_action_stop, true);
 </string>
           </argument>
         </arguments>
@@ -60,9 +65,11 @@ alarm[0]=50+random(150);
             <kind>1</kind>
             <string>/// Upon being triggered, change direction / speed
 
+/*
 direction=round(random(360));
 my_speed = 1 + random(1);
 alarm[0]=50+random(150);
+*/
 </string>
           </argument>
         </arguments>
@@ -87,65 +94,17 @@ alarm[0]=50+random(150);
             <kind>1</kind>
             <string>/// Set and check enemies movement and health
 
+
+/*
 // Move enemy set direction and speed
 motion_set(direction, my_speed);
-
+*/
 // Check to see if the enemy has died
 if(my_health &lt;= 0){
     instance_destroy();
     global.money += 1;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_wall">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Stop, then reassign direction / speed
 
-my_speed = 0;
-alarm[0] = 5;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_turret">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Stop, then reassign direction / speed
-my_speed = 0;
-alarm[0] = 5;
 </string>
           </argument>
         </arguments>

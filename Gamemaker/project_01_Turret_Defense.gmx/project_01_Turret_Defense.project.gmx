@@ -18,7 +18,9 @@
   <backgrounds name="background">
     <background>background\bg_wall</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_test</path>
+  </paths>
   <fonts name="fonts">
     <font>fonts\fnt_button</font>
   </fonts>

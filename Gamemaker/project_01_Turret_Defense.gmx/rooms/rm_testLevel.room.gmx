@@ -51,19 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_enemy" x="416" y="128" name="inst_B63D9856" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="352" y="192" name="inst_8758E8B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="192" y="384" name="inst_A0D2B239" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="416" y="320" name="inst_2B33136D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="640" y="128" name="inst_B1C8A450" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="640" y="224" name="inst_41A0B83C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="448" y="256" name="inst_3716D733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="544" y="416" name="inst_6BD98193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="352" y="576" name="inst_6A2CB5BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="480" y="672" name="inst_EE0EC401" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="640" y="512" name="inst_64468302" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="896" y="352" name="inst_DE118C86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="928" y="512" name="inst_00B1409B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="496" y="16" name="inst_C6528C03" locked="0" code="" scaleX="33.4799995422363" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="752" name="inst_CB98D1CB" locked="0" code="" scaleX="33.4799995422363" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="384" name="inst_01EBED6E" locked="0" code="" scaleX="2.45161294937134" scaleY="23" colour="4294967295" rotation="0"/>
@@ -100,6 +87,7 @@
     <instance objName="obj_engine" x="48" y="48" name="inst_85783B29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="912" y="128" name="inst_9C688D2C" locked="0" code="//Set the turret that this spawns.&#xA;&#xA;my_turret = obj_homingTurret;&#xA;text = &quot;Homing&quot;;&#xA;cost = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="912" y="80" name="inst_21BCF3BC" locked="0" code="//Set the turret that this spawns.&#xA;&#xA;my_turret = obj_turret;&#xA;text = &quot;Bullet&quot;;&#xA;cost = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy" x="112" y="208" name="inst_53398692" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
