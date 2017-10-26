@@ -31,6 +31,12 @@
 my_health = 100;
 my_speed = 1 + random(1);
 
+path[0] = path_left;
+path[1] = path_middle;
+path[2] = path_right;
+
+my_path = choose(path[0], path[1], path[2]);
+
 /*
 // Choose an initial movement direction
 direction=round(random(360));
@@ -40,7 +46,7 @@ direction=round(random(360));
 alarm[0]=50+random(150);
 */
 
-path_start(path_left, my_speed, path_action_stop, true);
+path_start(my_path, my_speed, path_action_stop, true);
 </string>
           </argument>
         </arguments>
