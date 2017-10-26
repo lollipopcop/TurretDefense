@@ -16,10 +16,12 @@
     <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_wall</background>
+    <background>background\bg_wire</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\path_test</path>
+    <path>paths\path_left</path>
+    <path>paths\path_middle</path>
+    <path>paths\path_right</path>
   </paths>
   <fonts name="fonts">
     <font>fonts\fnt_button</font>

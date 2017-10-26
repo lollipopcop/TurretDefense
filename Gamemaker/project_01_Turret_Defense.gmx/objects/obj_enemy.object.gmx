@@ -40,7 +40,7 @@ direction=round(random(360));
 alarm[0]=50+random(150);
 */
 
-path_start(path_test, my_speed, path_action_stop, true);
+path_start(path_left, my_speed, path_action_stop, true);
 </string>
           </argument>
         </arguments>
