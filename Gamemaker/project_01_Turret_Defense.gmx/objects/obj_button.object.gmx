@@ -144,7 +144,6 @@ if(cost &lt;= global.money){
             global.money -= cost;
             turret.image_index = 0;
             turret.created = true;
-            turret.depth = -1000;
             turret = noone;
             leftPressed = 0;
             buttonPressed = false;
