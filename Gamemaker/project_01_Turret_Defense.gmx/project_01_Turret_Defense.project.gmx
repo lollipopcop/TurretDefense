@@ -15,7 +15,7 @@
     <sprite>sprites\spr_homingBullet</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_turretHole</sprite>
-    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\spr_skeletonVirus</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wire</background>
