@@ -66,8 +66,10 @@
     <instance objName="obj_turretHole" x="736" y="480" name="inst_F37BC423" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_turretHole" x="736" y="256" name="inst_746D7936" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_turretHole" x="288" y="128" name="inst_B6C44A0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_turretHole" x="480" y="560" name="inst_351139E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_turretHole" x="624" y="560" name="inst_BE75AC85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_turretHole" x="480" y="544" name="inst_351139E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coreSystem" x="416" y="608" name="inst_89CEA00C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coreSystem" x="560" y="608" name="inst_C833D516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coreSystem" x="672" y="608" name="inst_F6C4A028" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_wire" x="336" y="48" w="32" h="32" xo="0" yo="32" id="10000001" name="inst_44A5FB6B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

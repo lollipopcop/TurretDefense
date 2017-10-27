@@ -31,6 +31,8 @@
 my_health = 100;
 my_speed = 1 + random(1);
 
+image_speed = 0.5;
+
 path[0] = path_left;
 path[1] = path_middle;
 path[2] = path_right;
@@ -111,6 +113,29 @@ if(my_health &lt;= 0){
     global.money += 1;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_coreSystem">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>other.my_health -= 1;
 </string>
           </argument>
         </arguments>
