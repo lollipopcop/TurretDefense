@@ -14,7 +14,7 @@
     <sprite>sprites\spr_homingTurret</sprite>
     <sprite>sprites\spr_homingBullet</sprite>
     <sprite>sprites\spr_explosion</sprite>
-    <sprite>sprites\spr_turretHole</sprite>
+    <sprite>sprites\spr_turretSocket</sprite>
     <sprite>sprites\spr_skeletonVirus</sprite>
     <sprite>sprites\spr_coreSystem</sprite>
   </sprites>
