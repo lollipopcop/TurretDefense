@@ -17,6 +17,22 @@
     <sprite>sprites\spr_turretSocket</sprite>
     <sprite>sprites\spr_skeletonVirus</sprite>
     <sprite>sprites\spr_coreSystem</sprite>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <sprite>sprites\spr_path</sprite>
+=======
+    <sprite>sprites\spr_startButton</sprite>
+    <sprite>sprites\spr_exitButton</sprite>
+>>>>>>> 8a676394e96296c048eb40bc8f6a705497046100
+=======
+    <sprite>sprites\spr_startButton</sprite>
+    <sprite>sprites\spr_exitButton</sprite>
+>>>>>>> 8a676394e96296c048eb40bc8f6a705497046100
+=======
+    <sprite>sprites\spr_startButton</sprite>
+    <sprite>sprites\spr_exitButton</sprite>
+>>>>>>> 8a676394e96296c048eb40bc8f6a705497046100
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wire</background>
@@ -25,6 +41,7 @@
     <path>paths\path_left</path>
     <path>paths\path_middle</path>
     <path>paths\path_right</path>
+    <path>paths\path3</path>
   </paths>
   <fonts name="fonts">
     <font>fonts\fnt_button</font>
@@ -42,9 +59,37 @@
     <object>objects\obj_explosion</object>
     <object>objects\obj_turretHole</object>
     <object>objects\obj_coreSystem</object>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <object>objects\obj_path</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_testAlphaLevel</room>
+=======
+    <object>objects\obj_startButton</object>
+    <object>objects\obj_exitButton</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_start</room>
+>>>>>>> 8a676394e96296c048eb40bc8f6a705497046100
+=======
+    <object>objects\obj_startButton</object>
+    <object>objects\obj_exitButton</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_start</room>
+>>>>>>> 8a676394e96296c048eb40bc8f6a705497046100
+=======
+    <object>objects\obj_startButton</object>
+    <object>objects\obj_exitButton</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_start</room>
+>>>>>>> 8a676394e96296c048eb40bc8f6a705497046100
     <room>rooms\rm_testLevel</room>
+    <room>rooms\rm_lose</room>
+    <room>rooms\rm_win</room>
   </rooms>
   <constants number="1">
     <constant name="CELL_WIDTH">32</constant>

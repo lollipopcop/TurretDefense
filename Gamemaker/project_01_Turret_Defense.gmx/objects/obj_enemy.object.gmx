@@ -39,6 +39,9 @@ path[2] = path_right;
 
 my_path = choose(path[0], path[1], path[2]);
 
+// Used for checking direction and changing sprite direction
+current_x = x;
+
 /*
 // Choose an initial movement direction
 direction=round(random(360));
@@ -48,7 +51,7 @@ direction=round(random(360));
 alarm[0]=50+random(150);
 */
 
-path_start(my_path, my_speed, path_action_stop, true);
+path_start(path3, my_speed, path_action_stop, true);
 </string>
           </argument>
         </arguments>
@@ -112,6 +115,20 @@ if(my_health &lt;= 0){
     instance_destroy();
     global.money += 1;
 }
+
+// Check direction moving
+new_x = x; // Check current x
+if(new_x == current_x) {
+    // No change in direction
+} else if(new_x &lt; current_x) {
+    image_xscale = 1; // Keep natural sprite direction
+} else {
+    image_xscale = -1; // Invert sprite
+}
+
+current_x = x; // Set current x in prep of next check.
+
+
 
 </string>
           </argument>
