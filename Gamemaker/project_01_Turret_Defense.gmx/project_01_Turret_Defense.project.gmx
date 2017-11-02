@@ -17,6 +17,8 @@
     <sprite>sprites\spr_turretSocket</sprite>
     <sprite>sprites\spr_skeletonVirus</sprite>
     <sprite>sprites\spr_coreSystem</sprite>
+    <sprite>sprites\spr_startButton</sprite>
+    <sprite>sprites\spr_exitButton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wire</background>
@@ -42,9 +44,14 @@
     <object>objects\obj_explosion</object>
     <object>objects\obj_turretHole</object>
     <object>objects\obj_coreSystem</object>
+    <object>objects\obj_startButton</object>
+    <object>objects\obj_exitButton</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start</room>
     <room>rooms\rm_testLevel</room>
+    <room>rooms\rm_lose</room>
+    <room>rooms\rm_win</room>
   </rooms>
   <constants number="1">
     <constant name="CELL_WIDTH">32</constant>
