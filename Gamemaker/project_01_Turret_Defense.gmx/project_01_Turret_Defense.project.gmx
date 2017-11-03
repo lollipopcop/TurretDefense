@@ -19,6 +19,7 @@
     <sprite>sprites\spr_coreSystem</sprite>
     <sprite>sprites\spr_startButton</sprite>
     <sprite>sprites\spr_exitButton</sprite>
+    <sprite>sprites\spr_path</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wire</background>
@@ -27,6 +28,7 @@
     <path>paths\path_left</path>
     <path>paths\path_middle</path>
     <path>paths\path_right</path>
+    <path>paths\AlphaLevelPath1</path>
   </paths>
   <fonts name="fonts">
     <font>fonts\fnt_button</font>
@@ -46,9 +48,11 @@
     <object>objects\obj_coreSystem</object>
     <object>objects\obj_startButton</object>
     <object>objects\obj_exitButton</object>
+    <object>objects\obj_path</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_AlphaRoom</room>
     <room>rooms\rm_testLevel</room>
     <room>rooms\rm_lose</room>
     <room>rooms\rm_win</room>
