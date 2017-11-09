@@ -35,11 +35,9 @@ image_speed = 0.5;
 last_position = x;
 current_position = x;
 
-path[0] = path_left;
-path[1] = path_middle;
-path[2] = path_right;
+my_room = room_get_name(room);
 
-// my_path = choose(path[0], path[1], path[2]);
+my_path = scr_choosePath("rm_testLevel")
 
 /*
 // Choose an initial movement direction

@@ -32,6 +32,9 @@
     <path>paths\path_right</path>
     <path>paths\AlphaLevelPath1</path>
   </paths>
+  <scripts name="scripts">
+    <script>scripts\scr_choosePath.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_button</font>
   </fonts>
@@ -53,9 +56,9 @@
     <object>objects\obj_path</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_start</room>
-    <room>rooms\rm_AlphaRoom</room>
     <room>rooms\rm_testLevel</room>
+    <room>rooms\rm_AlphaRoom</room>
+    <room>rooms\rm_start</room>
     <room>rooms\rm_lose</room>
     <room>rooms\rm_win</room>
   </rooms>
