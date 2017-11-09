@@ -56,9 +56,9 @@
     <object>objects\obj_path</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_testLevel</room>
-    <room>rooms\rm_AlphaRoom</room>
     <room>rooms\rm_start</room>
+    <room>rooms\rm_AlphaRoom</room>
+    <room>rooms\rm_testLevel</room>
     <room>rooms\rm_lose</room>
     <room>rooms\rm_win</room>
   </rooms>

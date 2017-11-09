@@ -35,9 +35,9 @@ image_speed = 0.5;
 last_position = x;
 current_position = x;
 
-my_room = room_get_name(room);
+//my_room = room_get_name(room);
 
-my_path = scr_choosePath("rm_testLevel")
+my_path = scr_choosePath(room)
 
 /*
 // Choose an initial movement direction
@@ -48,7 +48,7 @@ direction=round(random(360));
 alarm[0]=50+random(150);
 */
 
-path_start(AlphaLevelPath1, my_speed, path_action_stop, true);
+path_start(my_path, my_speed, path_action_stop, true);
 </string>
           </argument>
         </arguments>

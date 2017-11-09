@@ -6,10 +6,10 @@ var paths;
 
 //based on the input room set up the path array
 switch(roomName){
-    case "rm_AlphaRoom":
+    case rm_AlphaRoom:
         paths[0] = AlphaLevelPath1;
         break;
-    case "rm_testLevel":
+    case rm_testLevel:
         paths[0] = path_left;
         paths[1] = path_middle;
         paths[2] = path_right;
