@@ -31,7 +31,7 @@ global.money = 10;
 global.cores = 0;
 
 // Start Game Music
-audio_play_sound(snd_gameMusic, 1, true);
+//audio_play_sound(snd_gameMusic, 1, true);
 
 // Randomly spawn enemies every x frames
 alarm[0]=300; //50+random(150);
