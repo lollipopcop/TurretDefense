@@ -147,6 +147,7 @@ if(cost &lt;= global.money){
                 turret.x = turretHoleID.x;
                 turret.y = turretHoleID.y;
                 turretHoleID.full = true;
+                turret.my_turretHole = turretHoleID;
                 global.money -= cost;
                 turret.image_index = 0;
                 turret.created = true;

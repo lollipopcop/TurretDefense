@@ -18,6 +18,7 @@ switch(roomName){
         paths[0] = path_level01_01;
         paths[1] = path_level01_02;
         paths[2] = path_level01_03;
+        paths[3] = path_level01_04;
         break;
 }
 
