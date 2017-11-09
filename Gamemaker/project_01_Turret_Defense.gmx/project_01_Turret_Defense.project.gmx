@@ -25,12 +25,18 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wire</background>
+    <background>background\bg_path</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_left</path>
     <path>paths\path_middle</path>
     <path>paths\path_right</path>
     <path>paths\AlphaLevelPath1</path>
+    <paths name="level01">
+      <path>paths\path_level01_01</path>
+      <path>paths\path_level01_02</path>
+      <path>paths\path_level01_03</path>
+    </paths>
   </paths>
   <scripts name="scripts">
     <script>scripts\scr_choosePath.gml</script>
@@ -57,10 +63,11 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_AlphaRoom</room>
+    <room>rooms\rm_level01</room>
     <room>rooms\rm_testLevel</room>
     <room>rooms\rm_lose</room>
     <room>rooms\rm_win</room>
+    <room>rooms\rm_AlphaRoom</room>
   </rooms>
   <constants number="1">
     <constant name="CELL_WIDTH">32</constant>

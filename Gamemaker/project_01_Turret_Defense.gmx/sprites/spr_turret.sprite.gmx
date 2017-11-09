@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>40</xorig>
-  <yorigin>44</yorigin>
+  <yorigin>43</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
@@ -21,5 +21,6 @@
   <height>69</height>
   <frames>
     <frame index="0">images\spr_turret_0.png</frame>
+    <frame index="1">images\spr_turret_1.png</frame>
   </frames>
 </sprite>

@@ -14,6 +14,11 @@ switch(roomName){
         paths[1] = path_middle;
         paths[2] = path_right;
         break;
+    case rm_level01:
+        paths[0] = path_level01_01;
+        paths[1] = path_level01_02;
+        paths[2] = path_level01_03;
+        break;
 }
 
 //choose a random path from the created array
