@@ -113,7 +113,7 @@ last_position = x; // Set last_x to current position for next calculation
 enemy = instance_nearest(x, y, obj_turrets);
 
 // if enemy is in range shoot at it
-if ((distance_to_object(enemy) &lt; range) &amp;&amp; (alarm[0] == -1)) {
+if ((distance_to_object(enemy) &lt; range) &amp;&amp; (alarm[0] == -1) &amp;&amp; (enemy.created = true) ) {
     //This sets the firing rate eto be slightly random
     alarm[0] = irandom_range(rateOfFire-3, rateOfFire+3);
 }
