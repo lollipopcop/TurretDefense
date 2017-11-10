@@ -140,30 +140,31 @@ if(cost &lt;= global.money){
             
             //grab the instance of the turrethole
             turretHoleID = instance_place(mouse_x, mouse_y, obj_turretHole);
-        }
+    
             //if there isn't any collision reset all variables effectively spawning the turret at that location                        
-        if((isCollision) &amp;&amp; (turretHoleID.full == false))
-        {
-            turret.x = turretHoleID.x;
-            turret.y = turretHoleID.y;
-            turretHoleID.full = true;
-            turret.my_turretHole = turretHoleID;
-            global.money -= cost;
-            turret.image_index = 0;
-            turret.created = true;
-                
-            turret = noone;
-            leftPressed = 0;
-            buttonPressed = false;
-            isCollision = false;
-            turretHoleID = noone;
-        }
-
-        //if there is collision reset number of left mouse presses to 1
-        else {
-            leftPressed = 1;
+            if((isCollision) &amp;&amp; (turretHoleID.full == false))
+            {
+                turret.x = turretHoleID.x;
+                turret.y = turretHoleID.y;
+                turretHoleID.full = true;
+                turret.my_turretHole = turretHoleID;
+                global.money -= cost;
+                turret.image_index = 0;
+                turret.created = true;
+                    
+                turret = noone;
+                leftPressed = 0;
+                buttonPressed = false;
+                isCollision = false;
+                turretHoleID = noone;
+            }
         }
     }
+    //if there is collision reset number of left mouse presses to 1
+    else {
+        leftPressed = 1;
+    }
+
 }
 </string>
           </argument>
@@ -197,7 +198,7 @@ draw_set_color(c_black);
 draw_set_font(fnt_button);
 
 //this checks the text variable which is made in the object creation code
-draw_text(x, y, text + " " + string(cost));
+draw_text(x, y, text);
 </string>
           </argument>
         </arguments>

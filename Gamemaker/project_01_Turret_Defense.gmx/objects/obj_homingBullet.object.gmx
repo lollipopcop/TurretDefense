@@ -109,17 +109,9 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>other.my_health -= damage;
 instance_create(x, y, obj_explosion);
 instance_destroy();
-=======
-            <string>if(instance_exists(other)){
-    other.my_health -= damage;
-    instance_create(x, y, obj_explosion);
-    instance_destroy();
-}
->>>>>>> 0a59fa6034536d3d7b7473cdf7244cecc66af3eb
 </string>
           </argument>
         </arguments>
