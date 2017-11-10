@@ -197,7 +197,7 @@ draw_set_color(c_black);
 draw_set_font(fnt_button);
 
 //this checks the text variable which is made in the object creation code
-draw_text(x, y, text);
+draw_text(x, y, text + " " + string(cost));
 </string>
           </argument>
         </arguments>
