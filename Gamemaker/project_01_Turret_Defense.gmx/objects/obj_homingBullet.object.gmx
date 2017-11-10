@@ -110,7 +110,12 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>instance_create(x, y, obj_explosion);
+=======
+            <string>other.my_health -= damage;
+instance_create(x, y, obj_explosion);
+>>>>>>> parent of 0a59fa6... added text to lose/win rooms
 instance_destroy();
 </string>
           </argument>
