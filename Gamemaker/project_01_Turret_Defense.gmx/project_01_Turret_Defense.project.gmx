@@ -33,6 +33,8 @@
   <backgrounds name="background">
     <background>background\bg_wire</background>
     <background>background\bg_path</background>
+    <background>background\bg_win</background>
+    <background>background\bg_lose</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_left</path>
