@@ -68,31 +68,6 @@ if ( distance_to_object(my_turret) &gt; my_turret.my_range ){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_enemies">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>other.my_health -= damage;
-instance_create(x, y, obj_explosion);
-instance_destroy();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
@@ -110,13 +85,35 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>instance_create(x, y, obj_explosion);
-=======
-            <string>other.my_health -= damage;
-instance_create(x, y, obj_explosion);
->>>>>>> parent of 0a59fa6... added text to lose/win rooms
 instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemies">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_exists(other)){
+    other.my_health -= damage;
+    instance_create(x, y, obj_explosion);
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

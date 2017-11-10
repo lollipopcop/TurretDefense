@@ -54,7 +54,9 @@
     <instance objName="obj_exitButton" x="544" y="384" name="inst_912566D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_startButton" x="544" y="288" name="inst_DD7E9DC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="bg_win" x="224" y="128" w="128" h="96" xo="0" yo="0" id="10000359" name="inst_AF3E5DEE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
