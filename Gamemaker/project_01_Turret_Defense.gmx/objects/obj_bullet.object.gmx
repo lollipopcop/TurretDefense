@@ -74,9 +74,10 @@ my_speed = 7;
           <argument>
             <kind>1</kind>
             <string>/// Deal Damage
-
-other.my_health -= damage;
-instance_destroy();
+if (instance_exists(other)){
+    other.my_health -= damage;
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

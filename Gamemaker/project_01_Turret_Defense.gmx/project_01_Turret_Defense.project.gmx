@@ -28,11 +28,14 @@
       <sprite>sprites\spr_skeletonVirus</sprite>
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_electrocution</sprite>
+      <sprite>sprites\spr_blitz</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_wire</background>
     <background>background\bg_path</background>
+    <background>background\bg_win</background>
+    <background>background\bg_lose</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_left</path>
