@@ -10,6 +10,7 @@
   <sprites name="sprites">
     <sprites name="Turrets">
       <sprite>sprites\spr_turretSocket</sprite>
+      <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_homingTurret</sprite>
       <sprite>sprites\spr_explosion</sprite>
       <sprite>sprites\spr_homingBullet</sprite>
@@ -24,7 +25,6 @@
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_shockEnemy</sprite>
-      <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_skeletonVirus</sprite>
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_electrocution</sprite>
