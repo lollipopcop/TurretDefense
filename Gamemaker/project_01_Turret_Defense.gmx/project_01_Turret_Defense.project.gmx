@@ -29,6 +29,7 @@
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_electrocution</sprite>
       <sprite>sprites\spr_blitz</sprite>
+      <sprite>sprites\sprite16</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -84,8 +85,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_start</room>
     <room>rooms\rm_level01</room>
+    <room>rooms\rm_start</room>
     <room>rooms\rm_testLevel</room>
     <room>rooms\rm_lose</room>
     <room>rooms\rm_win</room>
