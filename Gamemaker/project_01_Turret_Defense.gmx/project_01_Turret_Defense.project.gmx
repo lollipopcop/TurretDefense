@@ -22,6 +22,8 @@
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_startButton</sprite>
       <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_healthBarBorder</sprite>
+      <sprite>sprites\spr_healthBarStatus</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_shockEnemy</sprite>
@@ -78,6 +80,8 @@
       <object>objects\obj_wall</object>
       <object>objects\obj_exitButton</object>
       <object>objects\obj_startButton</object>
+      <object>objects\obj_healthBarBorder</object>
+      <object>objects\obj_healthBarStatus</object>
     </objects>
     <objects name="Engine">
       <object>objects\obj_collision</object>
