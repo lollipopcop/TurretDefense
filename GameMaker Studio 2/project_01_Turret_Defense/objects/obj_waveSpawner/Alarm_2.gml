@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Wait + Increment Wave
 // You can write your code in this editor
 
 wave ++;

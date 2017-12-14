@@ -778,7 +778,7 @@
             "Key": "ef669df7-c653-4fc2-95da-9d3441e3938c",
             "Value": {
                 "id": "4e3b2eb5-89de-4e84-aa58-3f51bcd61778",
-                "resourcePath": "objects\\obj_enemyWave_level01\\obj_enemyWave_level01.yy",
+                "resourcePath": "objects\\obj_waveSpawner\\obj_waveSpawner.yy",
                 "resourceType": "GMObject"
             }
         },

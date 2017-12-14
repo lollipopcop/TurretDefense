@@ -2,7 +2,7 @@
     "id": "ef669df7-c653-4fc2-95da-9d3441e3938c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_enemyWave_level01",
+    "name": "obj_waveSpawner",
     "eventList": [
         {
             "id": "ab1b5f18-1e3c-4961-86eb-854870d6c7bc",
