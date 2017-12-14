@@ -1,0 +1,69 @@
+Converting GML script: ${project_dir}\scripts\scr_choosePath\scr_choosePath.gml
+Converted description /// @description choosePath(roomName)/// @function choosePath
+/// @param roomName
+
+Font fnt_button has been converted to font family Verdana (Regular) - Font has been regenerated, small inconsistencies may occur
+Converting GML script: ${project_dir}\objects\obj_bullet\Create_0.gml
+Converted description /// @description  Setup Bullet
+
+Converting GML script: ${project_dir}\objects\obj_bullet\Collision_fc2b228c-fdab-4b23-82b0-51508af94d58.gml
+Converted description /// @description  Deal Damage
+
+Converting GML script: ${project_dir}\objects\obj_turret\Create_0.gml
+Converted description /// @description  Initialize Turret Variables
+
+Converting GML script: ${project_dir}\objects\obj_turret\Alarm_0.gml
+Converted description /// @description  Creates / Fires Projectile when created
+
+Converting GML script: ${project_dir}\objects\obj_turret\Step_0.gml
+Converted description /// @description  Aim at closest Enemy (in range) and shoot projectile/// @function  Aim at closest Enemy 
+/// @param in range
+
+Converting GML script: ${project_dir}\objects\obj_homingTurret\Create_0.gml
+Converted description /// @description  Set up variables
+
+Converting GML script: ${project_dir}\objects\obj_homingTurret\Alarm_0.gml
+Converted description /// @description  Creates / Fires Projectile when created
+
+Converting GML script: ${project_dir}\objects\obj_enemy\Create_0.gml
+Converted description /// @description  Initialize Enemy variables
+
+Converting GML script: ${project_dir}\objects\obj_enemy\Step_0.gml
+Converted description /// @description  Set and check enemies movement and health
+
+Converting GML script: ${project_dir}\objects\obj_shockEnemy\Create_0.gml
+Converted description /// @description  Initialize Enemy variables
+
+Converting GML script: ${project_dir}\objects\obj_shockEnemy\Step_0.gml
+Converted description /// @description  Set and check enemies movement and health
+
+Converting GML script: ${project_dir}\objects\obj_button\Create_0.gml
+Converted description /// @description  set up variables
+
+Converting GML script: ${project_dir}\objects\obj_button\Step_0.gml
+Converted description /// @description  turret follows mouse until spawned
+
+Converting GML script: ${project_dir}\objects\obj_button\Mouse_53.gml
+Converted description /// @description spawn the turret based on the button
+
+Converting GML script: ${project_dir}\objects\obj_button\Draw_0.gml
+Converted description /// @description set up button text
+
+Converting GML script: ${project_dir}\objects\obj_engine\Create_0.gml
+Converted description /// @description  Set up initial game related variables
+
+Converting GML script: ${project_dir}\objects\obj_engine\Step_2.gml
+Converted description /// @description  Ensure the player can never have negative money
+
+Converting GML script: ${project_dir}\objects\obj_enemySpawn\Alarm_1.gml
+Converted description /// @description Spawn a shock enemy
+
+Converting GML script: ${project_dir}\objects\obj_enemySpawn\Alarm_0.gml
+Converted description /// @description Spawn a normal enemy
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'snd_gameMusic' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script '__global_object_depths.gml'
