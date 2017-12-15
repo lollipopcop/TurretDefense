@@ -17,12 +17,17 @@ if(wave < array_height_2d(arrayWave)){
 	
 	//if all enemies from the current wave have been spawned start the wave gap
 	if( ((arrayWave[wave, 0] + arrayWave[wave, 1]) <= 0) && (wave < 4 ) &&  !waveGap){
-		alarm[2] = room_speed*20;	
+		if(!((wave + 1) == array_height_2d(arrayWave))) {
+			alarm[2] = room_speed*20;
+		} else {
+			alarm[2] = room_speed*4;
+		}
+			
 		waveGap = true;
 	}
 }
 
 //if all enemies in all waves have been defeated you have won the level!
-if ( (wave = array_height_2d(arrayWave)) && !(instance_exists(obj_enemies))){
+if ( (wave == (array_height_2d(arrayWave))) && !(instance_exists(obj_enemies))){
 	room_goto(rm_win);	
 }

@@ -26,7 +26,7 @@ if(cost <= global.money){
             isCollision = true;
             
             //grab the instance of the turrethole
-            turretHoleID = instance_place(mouse_x, mouse_y, obj_turretHole);
+            turretHoleID = instance_nearest(mouse_x, mouse_y, obj_turretHole);
         }
             //if there isn't any collision reset all variables effectively spawning the turret at that location                        
         if((isCollision) && (turretHoleID.full == false))
