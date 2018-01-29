@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "3d6a2251-dca9-4601-b9f4-8b31d3b117aa",
+            "Value": {
+                "id": "e5eba566-b058-4cfb-91a1-65735c8f6a82",
+                "resourcePath": "sprites\\spr_buttonHigh\\spr_buttonHigh.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3df3bab6-968a-4847-b9eb-df4a18db8643",
             "Value": {
                 "id": "41546a0d-c6e8-4f95-a367-3fccaca6f516",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "5193562f-9ad5-4819-a104-3ebecd3c9e26",
+            "Value": {
+                "id": "5505e0b2-431c-4f3a-b6da-0fd03d1287a6",
+                "resourcePath": "objects\\obj_button_high\\obj_button_high.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "56ec1950-003b-44a3-84eb-fa682c81544e",
             "Value": {
                 "id": "31b4e210-3f71-484b-b0c9-a62abebdfb70",
@@ -300,6 +316,14 @@
                 "id": "22ba54dd-750c-46e4-8921-13e331f9b37c",
                 "resourcePath": "views\\5b2843dd-a729-4895-8e93-4f929a1142d0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5c50c532-0858-4907-b5dd-3fb6d40ae7c0",
+            "Value": {
+                "id": "4ec05ca4-0e0e-4fc9-b915-554d38b61d80",
+                "resourcePath": "paths\\path_high_res_test\\path_high_res_test.yy",
+                "resourceType": "GMPath"
             }
         },
         {

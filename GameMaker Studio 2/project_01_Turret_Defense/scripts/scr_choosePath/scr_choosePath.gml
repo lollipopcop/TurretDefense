@@ -22,6 +22,8 @@ switch(roomName){
         paths[2] = path_level01_03;
         paths[3] = path_level01_04;
         break;
+	case rm_high_res:
+		paths[0] = path_high_res_test;
 }
 
 //choose a random path from the created array

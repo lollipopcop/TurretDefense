@@ -9,7 +9,8 @@
         "65525693-29cf-4611-8ca6-7d9329a2c2fd",
         "4eb31e39-72b3-4205-88ef-5497fe93df91",
         "3df3bab6-968a-4847-b9eb-df4a18db8643",
-        "89d1503c-588d-4731-a6c9-f046bb3f9f00"
+        "89d1503c-588d-4731-a6c9-f046bb3f9f00",
+        "3d6a2251-dca9-4601-b9f4-8b31d3b117aa"
     ],
     "filterType": "GMSprite",
     "folderName": "Overlay_Buttons",
